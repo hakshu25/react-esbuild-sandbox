@@ -1,0 +1,59 @@
+{
+  "name": "minimum-react-ts",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "test": "jest",
+    "test:ci": "jest --coverage --updateSnapshot --ci",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prettier": "prettier --write '**/*.ts*'",
+    "prettier:check": "yarn prettier --check",
+    "codecheck": "yarn lint && yarn prettier:check",
+    "codefix": "yarn lint:fix && yarn prettier"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/flyhighair/minimum-react-ts.git",
+  "author": "hakshu <flyhighup.air25@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14"
+  },
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-react": "7.12.10",
+    "@types/jest": "26.0.20",
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@types/react-test-renderer": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.14.0",
+    "@typescript-eslint/parser": "4.14.0",
+    "babel-jest": "26.6.3",
+    "css-loader": "5.0.1",
+    "eslint": "7.18.0",
+    "eslint-config-prettier": "7.2.0",
+    "eslint-plugin-react": "7.22.0",
+    "html-webpack-plugin": "4.5.1",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.6.3",
+    "prettier": "2.2.1",
+    "react-test-renderer": "17.0.1",
+    "sass": "1.32.5",
+    "sass-loader": "10.1.1",
+    "style-loader": "2.0.0",
+    "ts-jest": "26.4.4",
+    "ts-loader": "8.0.14",
+    "typescript": "4.1.3",
+    "webpack": "5.17.0",
+    "webpack-cli": "4.4.0",
+    "webpack-dev-server": "3.11.2"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
+}
